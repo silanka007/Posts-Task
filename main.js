@@ -22,5 +22,6 @@ const showPost = (posts, parentElem) => {
 
 window.addEventListener('load', async(e) => {
     const postsData = await fetchPost('https://jsonplaceholder.typicode.com/posts');
-    showPost(postsData, postSection);
+    const firstTenPost = postsData.filter((post, index) => index < 10);
+    showPost(firstTenPost, postSection);
 })
