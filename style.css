@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(240, 238, 238);
+}
+
+.main{
+    /* background: white; */
+    max-width: 70vw;
+    margin: auto;
+
+}
+
+.header{
+    background: white;
+    height: 8rem;
+    color: rgb(31, 28, 28);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: auto;
+}
+
+.posts{
+    background: white;
+    color: rgb(31, 28, 28);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.post{
+    background: red;
+}
