@@ -9,35 +9,53 @@ body{
 }
 
 .main{
-    /* background: white; */
     max-width: 70vw;
     margin: auto;
+}
 
+.heading{
+    margin: auto;
+    color: rgb(5, 87, 5);
+    font-size: 3rem;
 }
 
 .header{
-    background: white;
     height: 8rem;
-    color: rgb(31, 28, 28);
-    margin-top: 2rem;
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
 }
-h1{
-    margin: auto;
+
+.header, .posts{
+    background: white;
+    color: rgb(31, 28, 28);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 1px 0.1px rgb(31, 28, 28);
 }
 
 .posts{
-    background: white;
-    color: rgb(31, 28, 28);
-    margin-top: 1rem;
-    border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem;
     margin-bottom: 2rem;
 }
 
 .post{
     padding: 1rem;
     border-bottom: 1px solid rgb(31, 28, 28);
+    animation: gradualDisplay 3s linear;
+}
+
+.post-title{
+    color: rgb(5, 87, 5);
+}
+
+@keyframes gradualDisplay { 
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
